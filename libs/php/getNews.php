@@ -6,7 +6,7 @@
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
-		'X-Api-Key: 77a90f4f63bb4d869757f3989e33d723',
+		'X-Api-Key: ***',
         'Content-Type: application/json; charset=UTF-8'
 	]);
 	curl_setopt($ch, CURLOPT_URL, $url);

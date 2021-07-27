@@ -1,6 +1,6 @@
 <?php
 
-	$url='http://api.geonames.org/citiesJSON?north=' . $_REQUEST['north'] . '&south=' . $_REQUEST['south'] . '&east='. $_REQUEST['east'] . '&west=' . $_REQUEST['west'] . '&lang=en&maxRows=20&username=ionutparvu85';
+	$url='http://api.geonames.org/citiesJSON?north=' . $_REQUEST['north'] . '&south=' . $_REQUEST['south'] . '&east='. $_REQUEST['east'] . '&west=' . $_REQUEST['west'] . '&lang=en&maxRows=20&username=***';
 	
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);

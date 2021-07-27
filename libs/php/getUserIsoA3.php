@@ -1,6 +1,6 @@
 <?php
 
-	$url='https://api.opencagedata.com/geocode/v1/json?q='. $_REQUEST['lat'] . '+'. $_REQUEST['lng'] .'&key=399f212d2ef7480da24e82692c802861';
+	$url='https://api.opencagedata.com/geocode/v1/json?q='. $_REQUEST['lat'] . '+'. $_REQUEST['lng'] .'&key=***';
 	
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
