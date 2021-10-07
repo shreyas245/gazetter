@@ -1,6 +1,6 @@
 <?php
 
-	$url='https://restcountries.eu/rest/v2/alpha/' . $_REQUEST['code'];
+	$url='https://restcountries.com/v2/alpha/' . $_REQUEST['code'];
 	
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
