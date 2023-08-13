@@ -21,11 +21,23 @@ const wsm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Wo
 });
 wsm.addTo(map); 
 
-const stadiaDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+const stadiaDark = L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {
     maxZoom: 20,
     minZoom: 2,
     attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 });
+
+ 
+const googleStreets = L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {
+    maxZoom: 20,
+    minZoom: 2,
+    subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+  });
+
+//   googleStreets.addTo(map)
+
+
+
     
 getCountries();
     
@@ -48,7 +60,8 @@ map.addLayer(hotelsCG);
 // Layer Controller
 const baseMaps = {
     "WSM": wsm,
-    "Stadia Dark": stadiaDark
+    "Stadia Dark": stadiaDark,
+    "Google Map":googleStreets
 };
 
 const markerLayers = {
